@@ -3,15 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Document</title>
+  <title>GlassesShop</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
 </head>
 <body>
+  <img src="./img/template.jpg" alt="" style="opacity: 0.3; position: absolute; z-index: -1;">
   <header class="page-header">
-
+    <div class="page-header__container">
+      <div class="page-header__top top-menu">
+        <div class="top-menu__language">
+          <span>Language</span>
+          <form action="">
+            <select name="language-select" class="language-select">
+              <option value="English">English</option>
+              <option value="Russian">Russian</option>
+            </select>
+          </form>
+        </div>
+        <div class="top-menu__currency">
+          <span>Currency</span>
+          <form action="">
+            <select name="currency-select" class="currency-select">
+              <option value="usd">usd</option>
+              <option value="rub">rub</option>
+            </select>
+          </form>
+        </div>
+        <ul class="top-menu__list menu-list">
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Account</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">wishlist</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Checkout</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Log in</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__bottom bottom-menu">
+        <a href="#" class="bottom-menu__logo logo">
+          <svg width="" height="">
+            <use xlink:href="img/sprite.svg#"></use>
+          </svg>
+        </a>
+        <nav class="bottom-menu__main-nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Men</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Women</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Other</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Purchase</a>
+            </li>
+          </ul>
+        </nav>
+        <form method="get" class="search-form" name="search-form">
+          <input name="search-input" placeholder="Search..." type="search">
+          <button type="submit"></button>
+        </form>
+        <div class="bottom-menu__icons">
+          <a href="#" class="bottom-menu__icon bottom-menu__icon--cards">
+            <svg width="" height="">
+              <use xlink:href="img/sprite.svg#"></use>
+            </svg>
+          </a>
+          <a href="#" class="bottom-menu__icon bottom-menu__icon--bascet">
+            <svg width="" height="">
+              <use xlink:href="img/sprite.svg#"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
 
