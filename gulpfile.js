@@ -53,20 +53,20 @@ function copyImg() {
 }
 exports.copyImg = copyImg;
 
-// function buildSvgSprite() {
-//   return src(`${dir.src}svg-sprite/*.svg`)
-//     .pipe(svgmin(function (file) {
-//       return {
-//         plugins: [{
-//           cleanupIDs: { minify: true }
-//         }]
-//       }
-//     }))
-//     .pipe(svgstore({ inlineSvg: true }))
-//     .pipe(rename('sprite.svg'))
-//     .pipe(dest(`${dir.build}img/`));
-// }
-// exports.buildSvgSprite = buildSvgSprite;
+function buildSvgSprite() {
+  return src(`${dir.src}svg-sprite/*.svg`)
+    .pipe(svgmin(function (file) {
+      return {
+        plugins: [{
+          cleanupIDs: { minify: true }
+        }]
+      }
+    }))
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename('sprite.svg'))
+    .pipe(dest(`${dir.build}img/`));
+}
+exports.buildSvgSprite = buildSvgSprite;
 
 function copyFonts() {
   return src(`${dir.src}fonts/**/*.{woff2,woff}`)
@@ -158,18 +158,18 @@ function serve() {
     browserSync.reload
   ));
   watch(`${dir.src}svg-sprite/*.svg`).on('all', series(
-    // buildSvgSprite,
+    buildSvgSprite,
     browserSync.reload
   ));
 }
 
 exports.build = series(
   clean,
-  parallel(styles, copyHTML, copyImg, copyFonts, javascript)
+  parallel(styles, copyHTML, copyImg, copyFonts, javascript, buildSvgSprite)
 )
 
 exports.default = series(
   clean,
-  parallel(styles, copyHTML, copyImg, copyFonts, javascript),
+  parallel(styles, copyHTML, copyImg, copyFonts, javascript, buildSvgSprite),
   serve
 );

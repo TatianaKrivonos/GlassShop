@@ -1,3 +1,11 @@
 @import 'variables';
 @import 'node_modules/normalize.css/normalize';
 @import 'global';
+@import 'fonts';
+
+@import 'blocks/page-header';
+@import 'blocks/top-menu';
+@import 'blocks/bottom-menu';
+@import 'blocks/menu-list';
+@import 'blocks/main-nav';
+@import 'blocks/search-form';
