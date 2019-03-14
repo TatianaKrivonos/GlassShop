@@ -12,21 +12,21 @@
 <body>
   <img src="./img/template.jpg" alt="" style="opacity: 0.3; position: absolute; z-index: -1;">
   <header class="page-header">
-    <div class="page-header__container">
-      <div class="page-header__top top-menu">
+    <div class="page-header__top top-menu">
+      <div class="page-header__container">
         <div class="top-menu__language">
-          <span>Language</span>
-          <form action="">
-            <select name="language-select" class="language-select">
+          <span>Language:</span>
+          <form action="" name="languge-form">
+            <select name="language-select">
               <option value="English">English</option>
               <option value="Russian">Russian</option>
             </select>
           </form>
         </div>
         <div class="top-menu__currency">
-          <span>Currency</span>
-          <form action="">
-            <select name="currency-select" class="currency-select">
+          <span>Currency:</span>
+          <form action="" name="currency-form">
+            <select name="currency-select">
               <option value="usd">usd</option>
               <option value="rub">rub</option>
             </select>
@@ -37,7 +37,7 @@
             <a href="#" class="menu-list__link">Account</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu-list__link">wishlist</a>
+            <a href="#" class="menu-list__link">Wishlist</a>
           </li>
           <li class="menu-list__item">
             <a href="#" class="menu-list__link">Checkout</a>
@@ -46,11 +46,13 @@
             <a href="#" class="menu-list__link">Log in</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu-list__link">Sign Up</a>
+            <a href="#" class="menu-list__link menu-list__link--last">Sign Up</a>
           </li>
         </ul>
       </div>
-      <div class="page-header__bottom bottom-menu">
+    </div>
+    <div class="page-header__bottom bottom-menu">
+      <div class="page-header__container">
         <a href="#" class="bottom-menu__logo logo">
           <svg width="166" height="26">
             <use xlink:href="img/sprite.svg#logo"></use>

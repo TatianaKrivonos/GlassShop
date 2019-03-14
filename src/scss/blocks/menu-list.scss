@@ -1,0 +1,21 @@
+.menu-list {
+  margin-left: auto;
+
+  &__item {
+
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: $font-family;
+    font-size: 13px;
+    color: #fff;
+    padding: 0 15px;
+    border-right: 1px solid #fff;
+
+    &--last {
+      padding: 0 0 0 15px;
+      border-right: 0;
+    }
+  }
+}
