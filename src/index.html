@@ -10,7 +10,7 @@
   </script>
 </head>
 <body>
-  <img src="./img/template.jpg" alt="" style="opacity: 0.3; position: absolute; z-index: -1;">
+  <!-- <img src="./img/template.jpg" alt="" style="opacity: 0.3; position: absolute; z-index: -1;"> -->
   <header class="page-header">
     <div class="page-header__top top-menu">
       <div class="page-header__container">
@@ -64,10 +64,10 @@
               <a href="" class="main-nav__link">Home</a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link">Men</a>
+              <a href="" class="main-nav__link">Women</a>
             </li>
             <li class="main-nav__item">
-              <a href="" class="main-nav__link">Women</a>
+              <a href="" class="main-nav__link">Men</a>
             </li>
             <li class="main-nav__item">
               <a href="" class="main-nav__link">Other</a>
@@ -79,7 +79,11 @@
         </nav>
         <form method="get" class="search-form" name="search-form">
           <input name="search-input" placeholder="Search..." type="search">
-          <button type="submit"></button>
+          <button type="submit">
+            <svg width="12" height="12">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
         </form>
         <div class="bottom-menu__icons">
           <a href="#" class="bottom-menu__icon bottom-menu__icon--label">
@@ -87,13 +91,13 @@
               <use xlink:href="img/sprite.svg#shop-labels"></use>
             </svg>
           </a>
-          <a href="#" class="bottom-menu__icon bottom-menu__icon--bascet">
+          <a href="#" class="bottom-menu__icon bottom-menu__icon--basket">
             <svg width="20" height="17">
               <use xlink:href="img/sprite.svg#basket"></use>
             </svg>
           </a>
         </div>
-        <div class="bottom-menu__counter">cart (<span></span>)</div>
+        <div class="bottom-menu__counter">cart (<span>0</span>)</div>
       </div>
     </div>
   </header>

@@ -1,0 +1,34 @@
+.search-form {
+  position: relative;
+  margin-right: 12px;
+  width: 170px;
+
+  input,
+  button {
+    outline: 0;
+    background-color: transparent;
+  }
+
+  input {
+    width: 100%;
+    height: 27px;
+    padding-left: 10px;
+    border: 1px solid $gray-light;
+  }
+
+  button {
+    border: none;
+    height: 30px;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    cursor: pointer;
+
+    svg {
+      fill: $gray;
+    }
+  }
+}
+
+

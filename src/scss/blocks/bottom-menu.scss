@@ -1,3 +1,43 @@
 .bottom-menu {
   padding: 40px 0;
+
+  &__logo {
+    display: inline-block;
+    margin-right: 50px;
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__icon {
+    display: inline-flex;
+    margin-top: -3px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: $second-color;
+
+    svg {
+      margin: auto;
+      fill: #fff;
+    }
+
+    &--label {
+      transform: scale(-1, 1);
+      margin-right: 5px;
+    }
+
+    &--basket {
+      margin-right: 13px;
+    }
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $gray;
+    font-weight: 700;
+  }
 }

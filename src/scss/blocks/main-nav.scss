@@ -1,6 +1,24 @@
 .main-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 
   &__list {
     display: flex;
+  }
+
+  &__item {
+    margin-right: 22px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: $gray;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 }
