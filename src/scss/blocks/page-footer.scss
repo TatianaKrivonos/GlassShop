@@ -1,0 +1,35 @@
+.page-footer {
+  padding: 20px 0;
+  background-color: $third-color;
+
+  &__container {
+    margin: 0 auto;
+    width: 1024px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__copuright,
+  &__link {
+    font-size: 13px;
+    text-transform: capitalize;
+    color: lighten($fourth-color, 20%);
+  }
+
+  &__item {
+    padding: 0 15px;
+    border-right: 1px solid $fourth-color;
+
+    &:last-child {
+      padding: 0 0 0 15px;
+      border-right: 0;
+    }
+  }
+}
