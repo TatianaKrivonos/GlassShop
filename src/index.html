@@ -8,9 +8,11 @@
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody()</script>
 </head>
 <body>
-  <!-- <img src="./img/template.jpg" alt="" style="opacity: 0.3; position: absolute; z-index: -1;"> -->
+  <!-- <img src="./img/template.jpg" alt="" style="opacity: 0.3; position: absolute; z-index: 1;"> -->
   <header class="page-header">
     <div class="page-header__top top-menu">
       <div class="page-header__container">
@@ -78,7 +80,7 @@
           </ul>
         </nav>
         <form method="get" class="search-form" name="search-form">
-          <input name="search-input" placeholder="Search..." type="search">
+          <input name="search-input" placeholder="Search..." type="text">
           <button type="submit">
             <svg width="12" height="12">
               <use xlink:href="img/sprite.svg#search"></use>
@@ -102,10 +104,33 @@
     </div>
   </header>
   <main>
-
+    <div class="banner">
+      <div class="banner__row j-slider">
+        <div class="banner__item">
+          <div class="banner__container">
+            <p><span>aluminum club1</span></p>
+            <p><span>experience ray-ban</span></p>
+          </div>
+        </div>
+        <div class="banner__item">
+          <div class="banner__container">
+            <p><span>aluminum club2</span></p>
+            <p><span>experience ray-ban</span></p>
+          </div>
+        </div>
+        <div class="banner__item">
+          <div class="banner__container">
+            <p><span>aluminum club3</span></p>
+            <p><span>experience ray-ban</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
 
   </footer>
+  <script src="js/vendors.min.js"></script>
+  <script src ="js/script.min.js"></script>
 </body>
 </html>

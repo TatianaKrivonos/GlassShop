@@ -76,15 +76,15 @@ function copyFonts() {
 exports.copyFonts = copyFonts;
 
 
-// function copyVendorsJs() {
-//   return src([
-//       './node_modules/picturefill/dist/picturefill.min.js',
-//       './node_modules/svg4everybody/dist/svg4everybody.min.js',
-//     ])
-//     .pipe(plumber())
-//     .pipe(dest(`${dir.build}js/`));
-// }
-// exports.copyVendorsJs = copyVendorsJs;
+function copyVendorsJs() {
+  return src([
+      './node_modules/picturefill/dist/picturefill.min.js',
+      './node_modules/svg4everybody/dist/svg4everybody.min.js',
+    ])
+    .pipe(plumber())
+    .pipe(dest(`${dir.build}js/`));
+}
+exports.copyVendorsJs = copyVendorsJs;
 
 function javascript() {
   return src(`${dir.src}js/script.js`)
@@ -113,18 +113,18 @@ function javascript() {
 }
 exports.javascript = javascript;
 
-// function buildVendorsJs() {
-//   return src([
-//       './node_modules/jquery/dist/jquery.min.js',
-//       './node_modules/slick-carousel/slick/slick.min.js',
-//     ])
-//     .pipe(plumber())
-//     .pipe(concat('vendors.js'))
-//     .pipe(uglify())
-//     .pipe(rename({ suffix: '.min' }))
-//     .pipe(dest(`${dir.build}js/`));
-// }
-// exports.buildVendorsJs = buildVendorsJs;
+function buildVendorsJs() {
+  return src([
+      './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/slick-carousel/slick/slick.min.js',
+    ])
+    .pipe(plumber())
+    .pipe(concat('vendors.js'))
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(dest(`${dir.build}js/`));
+}
+exports.buildVendorsJs = buildVendorsJs;
 
 
 function clean() {
@@ -165,11 +165,11 @@ function serve() {
 
 exports.build = series(
   clean,
-  parallel(styles, copyHTML, copyImg, copyFonts, javascript, buildSvgSprite)
+  parallel(styles, copyHTML, copyImg, copyFonts, javascript, buildSvgSprite, copyVendorsJs, buildVendorsJs)
 )
 
 exports.default = series(
   clean,
-  parallel(styles, copyHTML, copyImg, copyFonts, javascript, buildSvgSprite),
+  parallel(styles, copyHTML, copyImg, copyFonts, javascript, buildSvgSprite, copyVendorsJs, buildVendorsJs),
   serve
 );
