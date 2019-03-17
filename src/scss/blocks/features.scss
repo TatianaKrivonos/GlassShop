@@ -1,0 +1,48 @@
+.features {
+  padding: 20px 0;
+  background-color: $main-color;
+
+  &__container {
+    margin: 0 auto;
+    width: 1024px;
+  }
+
+  &__row {
+    display: flex;
+    margin: 0 -40px;
+  }
+
+  &__col {
+    width: 50%;
+    padding: 0 40px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-img {
+    display: flex;
+    margin-right: 20px;
+    width: 65px;
+    height: 65px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    svg {
+      margin: auto;
+      fill: $main-color;
+    }
+
+    &--truck {
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__item-text {
+    color: #fff;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+}
