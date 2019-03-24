@@ -20,13 +20,82 @@
   &__item {
     font-size: 13px;
     color: #fff;
+
+    &--facebook {
+
+      p {
+        font-size: 13px;
+      }
+
+      button {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width: 45px;
+        height: 23px;
+        border: 0;
+        border-radius: 3px;
+        background-image: url('../img/fLike.png');
+      }
+    }
   }
 
   &__item-title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-weight: 400;
     font-size: 20px;
     text-transform: uppercase;
+  }
+
+  &__facebook-wrap {
+    font-size: 0;
+
+    a {
+      display: inline-block;
+      margin-right: 8px;
+      margin-bottom: 8px;
+
+      &:nth-child(4n+4) {
+        margin-right: 0;
+      }
+    }
+
+    &:after,
+    &:before {
+      display: block;
+      margin-bottom: 8px;
+      content: '';
+      width: 226px;
+      height: 1px;
+      background-color: $main-color;
+    }
+  }
+
+  &__twitter-wrap {
+    display: flex;
+    margin-bottom: 25px;
+
+    p {
+      font-size: 13px;
+      padding-top: 5px;
+    }
+
+    span {
+      color: lighten($fourth-color, 30%);
+    }
+
+    a {
+      display: flex;
+      margin-right: 15px;
+      min-width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    svg {
+      margin: auto;
+      fill: $fourth-color;
+    }
   }
 
   &__info-list {
@@ -53,10 +122,17 @@
 
   &__contuct-list {
     padding-left: 10px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
     line-height: 24px;
-    border-bottom: 1px solid $main-color;
+
+    &:after {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      content: '';
+      width: 190px;
+      height: 1px;
+      background-color: $main-color;
+    }
   }
 
   &__social-list {
