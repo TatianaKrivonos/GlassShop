@@ -1,0 +1,40 @@
+.slick {
+
+  &-slide {
+    outline: 0;
+  }
+
+  &-dots {
+    margin-top: 14px;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      button {
+        padding: 0;
+        width: 11px;
+        height: 11px;
+        border: 0;
+        border-radius: 50%;
+        font: 0/0 a;
+        background-color: $second-color;
+      }
+
+      &.slick-active {
+
+        button {
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+}
+

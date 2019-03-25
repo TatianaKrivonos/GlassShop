@@ -1,0 +1,75 @@
+.aside-content {
+  padding-left: 25px;
+  width: 25%;
+
+  &__slider,
+  &__signup {
+    padding: 25px 18px 30px;
+    border-top: 4px solid $main-color;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 400;
+      color: $gray-dark;
+      text-transform: uppercase;
+    }
+
+    button {
+      border: 0;
+      padding: 15px 25px;
+      color: #fff;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+  }
+
+  &__slider-img {
+    display: flex;
+    justify-content: center;
+    width: 195px;
+    height: 325px;
+    background-image: url('../img/aside.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    button {
+      margin-top: auto;
+      margin-bottom: 15px;
+      background-color: $main-color;
+    }
+  }
+
+  &__signup {
+
+    p {
+      color: $gray-dark;
+      font-size: 14px;
+
+      &:after {
+        display: block;
+        margin: 14px auto;
+        content: '';
+        width: 85px;
+        height: 1px;
+        background-color: $gray-lighter;
+      }
+    }
+
+    input {
+      margin-bottom: 18px;
+      width: 185px;
+      height: 29px;
+      border: 1px solid darken($gray-lighter, 5%);
+    }
+
+    button {
+      background-color: $second-color;
+    }
+  }
+}
