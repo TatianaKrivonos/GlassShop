@@ -4,7 +4,6 @@
 
   &__slider,
   &__signup {
-    padding: 25px 18px 30px;
     border-top: 4px solid $main-color;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -29,6 +28,10 @@
     padding-bottom: 0;
   }
 
+  &__slider-item {
+    padding: 25px 15px 0;
+  }
+
   &__slider-img {
     display: flex;
     justify-content: center;
@@ -46,6 +49,7 @@
   }
 
   &__signup {
+    padding: 25px 18px 30px;
 
     p {
       color: $gray-dark;

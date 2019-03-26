@@ -5,11 +5,12 @@
   }
 
   &-dots {
-    margin-top: 14px;
-    padding-top: 5px;
+    margin-top: 10px;
+    padding-top: 7px;
     padding-bottom: 13px;
     display: flex;
     justify-content: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0) 7%);
 
     li {
       margin-right: 10px;
