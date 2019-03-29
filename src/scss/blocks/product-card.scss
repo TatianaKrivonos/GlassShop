@@ -1,0 +1,41 @@
+.product-card {
+  margin-bottom: 28px;
+  padding: 10px 10px 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  &__img {
+    margin-bottom: 15px;
+  }
+
+  &__row {
+    display: flex;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    color: $gray-dark;
+  }
+
+  &__price {
+    font-size: 18px;
+    color: $second-color;
+  }
+
+  &__btn {
+    display: flex;
+    width: 47px;
+    height: 47px;
+    border: 0;
+    border-radius: 50%;
+    background-color: $second-color;
+
+    svg {
+      margin: auto;
+      fill: #fff;
+    }
+  }
+}

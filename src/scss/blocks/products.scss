@@ -6,4 +6,16 @@
     text-transform: uppercase;
     font-weight: 400;
   }
+
+  &__row {
+    display: flex;
+    margin: 0 -14px;
+    padding-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    width: 33.333333%;
+    padding: 0 14px;
+  }
 }
