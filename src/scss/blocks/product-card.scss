@@ -23,6 +23,12 @@
   &__price {
     font-size: 18px;
     color: $second-color;
+
+    span {
+      color: #000;
+      font-size: 14px;
+      text-decoration: line-through;
+    }
   }
 
   &__btn {
