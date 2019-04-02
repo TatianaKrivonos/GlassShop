@@ -15,7 +15,7 @@ function createCards(dataProducts) {
   let cardString = '';
   dataArr.forEach(function(product){
     cardString = cardString + `<div class="products__col">
-                                <article class="product-card">
+                                <article class="product-card ${product.label}">
                                   <img src="img/glasses/${product.img}" alt="" class="product-card__img" width="217" height="228">
                                   <div class="product-card__row">
                                     <div class="product-card__info">

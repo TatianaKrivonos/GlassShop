@@ -3,6 +3,46 @@
   padding: 10px 10px 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
+  &.new,
+  &.sale {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      position: absolute;
+      top: 15px;
+      display: block;
+      padding-top: 5px;
+      width: 250px;
+      height: 35px;
+      color: #fff;
+      box-sizing: border-box;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  &.new {
+
+    &:before {
+      right: -85px;
+      content: 'new';
+      background-color: $main-color;
+      transform: rotate(45deg);
+    }
+  }
+
+  &.sale {
+
+    &:before {
+      left: -85px;
+      content: 'sale';
+      background-color: $second-color;
+      transform: rotate(-45deg);
+    }
+  }
+
   &__img {
     margin-bottom: 15px;
   }
