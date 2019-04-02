@@ -6,9 +6,14 @@ $(document).ready(function(){
     dots: true,
     arrows: false
   });
+
+  $('.product-card__btn').on('click', function(e){
+    e.preventDefault();
+    $('.bottom-menu__counter span').html(+$('.bottom-menu__counter span').html()+1);
+  });
 })
 
-const cards = document.querySelector('.products__row');
+const cardsFeatured = document.querySelector('.products__row--featured');
 
 function createCards(dataProducts) {
   const dataArr = dataProducts.products;
@@ -36,11 +41,11 @@ function createCards(dataProducts) {
 }
 
 function insertElements(dataProducts, wrap) {
-        const html = createCards(dataProducts);
-        wrap.innerHTML = html;
+  const html = createCards(dataProducts);
+  wrap.innerHTML = html;
 }
 
-insertElements(dataProducts, cards);
+insertElements(dataProducts, cardsFeatured);
 
 
 
