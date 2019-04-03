@@ -55,3 +55,7 @@ input:focus {
   outline: 0;
 }
 
+select::-ms-expand {
+  display: none; /* hide the default arrow in ie10 and ie11 */
+}
+

@@ -18,29 +18,55 @@
     span {
       opacity: 0.8;
     }
+  }
+
+  &__form {
 
     select {
+      width: 100%;
+      padding: 0 10px 0 8px;
       border: 0;
       outline: 0;
       background-color: transparent;
       font-family: $font-family;
       color: #fff;
       font-size: 13px;
+      appearance: none;
 
       option {
         background-color: $main-color;
+        border: 0;
       }
+    }
+
+    &--currency {
+
+      select {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__select-wrap {
+    position: relative;
+    width: 100%;
+
+    &:before {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: '';
+      height: 10px;
+      width: 8px;
+      background-image: url('../img/down-arrow.svg');
+      background-repeat: no-repeat;
+      pointer-events: none;
+      z-index: 1;
     }
   }
 
   &__language {
     margin-right: 20px;
-  }
-
-  &__currency {
-
-    select {
-      text-transform: uppercase;
-    }
   }
 }
