@@ -1,7 +1,7 @@
 {
   "name": "GlassesShop",
   "version": "1.0.0",
-  "description": "GlassesShop",
+  "description": "GlassShop",
   "scripts": {
     "start": "gulp",
     "build": "npm start build",
