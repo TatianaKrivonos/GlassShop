@@ -14,11 +14,27 @@ $(document).ready(function(){
 })
 
 const cardsFeatured = document.querySelector('.products__row--featured');
+const cardsStaff = document.querySelector('.products__row--staff');
+const cardsNew = document.querySelector('.products__row--new');
+const dataArr = dataProducts.products;
 
-function createCards(dataProducts) {
-  const dataArr = dataProducts.products;
+let labelNew = [];
+  dataProducts.products.forEach(function(product){
+    if(product.label === 'new') {
+      labelNew.push(product);
+    }
+  });
+
+let staffPick = [];
+dataProducts.products.forEach(function(product){
+  if(product.label === 'sale') {
+    staffPick.push(product);
+  }
+});
+
+function createCards(data) {
   let cardString = '';
-  dataArr.forEach(function(product){
+  data.forEach(function(product) {
     cardString = cardString + `<div class="products__col">
                                 <article class="product-card ${product.label}">
                                   <img src="img/glass/${product.img}" alt="" class="product-card__img" width="217" height="228">
@@ -38,14 +54,15 @@ function createCards(dataProducts) {
   });
 
   return cardString;
-}
+};
 
-function insertElements(dataProducts, wrap) {
-  const html = createCards(dataProducts);
+function insertElements(data, wrap) {
+  const html = createCards(data);
   wrap.innerHTML = html;
-}
+};
 
-insertElements(dataProducts, cardsFeatured);
-
+insertElements(dataArr, cardsFeatured);
+insertElements(labelNew, cardsNew);
+insertElements(staffPick, cardsStaff);
 
 
