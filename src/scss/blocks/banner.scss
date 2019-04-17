@@ -1,23 +1,46 @@
 .banner {
 
   &__item {
-    padding-top: 190px;
-    padding-bottom: 175px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url('../img/promo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-width: $screen-md) {
+      padding-top: 90px;
+      padding-bottom: 125px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 190px;
+      padding-bottom: 199px;
+    }
 
     p {
-      margin-left: 50px;
       margin-bottom: 3px;
       width: auto;
       color: #fff;
-      font-size: 30px;
+      font-size: 24px;
       text-transform: uppercase;
 
+      @media (min-width: $screen-md) {
+        margin-bottom: 3px;
+        font-size: 30px;
+      }
+
+      @media (min-width: $screen-lg) {
+        margin-left: 50px;
+      }
+
       &:last-child {
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 700;
+
+        @media (min-width: $screen-md) {
+          font-size: 28px;
+        }
       }
 
       span {
@@ -29,7 +52,17 @@
   }
 
   &__container {
-    margin: 0 auto;
-    width: 1024px;
+    position: relative;
+    margin: 0 20px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      margin: 0 auto;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1024px;
+    }
   }
 }

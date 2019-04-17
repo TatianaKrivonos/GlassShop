@@ -1,14 +1,13 @@
 .slick-arrow {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 40px;
   margin-top: auto;
-  margin-bottom: auto;
   z-index: 1;
   padding: 0;
   border: 0;
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   font: 0/0 a;
   color: transparent;
   background-color: #fff;
@@ -16,14 +15,23 @@
   background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (min-width: $screen-md) {
+    width: 65px;
+    height: 65px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: auto;
+  }
 }
 
 .slick-prev {
-  left: 95px;
+  left: 60px;
   transform: rotate(180deg);
 }
 
 .slick-next {
-  right: 95px;
+  right: 60px;
 }
 
