@@ -50,7 +50,8 @@
     border-radius: 50%;
 
     @media (min-width: $screen-md) {
-      width: 65px;
+      min-width: 65px;
+      min-height: 65px;
     }
 
     svg {

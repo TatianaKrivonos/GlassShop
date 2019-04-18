@@ -3,18 +3,41 @@
   background-color: $fourth-color;
 
   &__container {
-    margin: 0 auto;
-    width: 1024px;
+    padding: 0 20px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      margin: 0 auto;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 auto;
+      width: 1024px;
+    }
   }
 
   &__row {
-    display: flex;
-    margin: 0 -20px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -20px;
+    }
   }
 
   &__col {
-    padding: 0 20px;
-    width: 25%;
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      padding: 0 20px;
+      width: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+      width: 25%;
+    }
   }
 
   &__item {
@@ -47,6 +70,7 @@
   }
 
   &__facebook-wrap {
+    width: 236px;
     font-size: 0;
 
     a {
