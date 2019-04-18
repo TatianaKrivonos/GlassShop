@@ -9,13 +9,26 @@
 
   &__row {
     display: flex;
-    margin: 0 -14px;
     padding-top: 15px;
     flex-wrap: wrap;
+
+    @media (min-width: $screen-md) {
+      margin: 0 -14px;
+    }
   }
 
   &__col {
-    width: 33.333333%;
-    padding: 0 14px;
+    width: 233px;
+    margin-right: 28px;
+
+    @media (min-width: $screen-md) {
+      margin-right: 0;
+      padding: 0 14px;
+      width: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 33.333333%;
+    }
   }
 }

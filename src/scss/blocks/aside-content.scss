@@ -1,6 +1,14 @@
 .aside-content {
-  padding-left: 25px;
-  width: 25%;
+  width: 233px;
+
+  @media (min-width: $screen-md) {
+    padding-left: 25px;
+    width: 35%;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 25%;
+  }
 
   &__slider,
   &__signup {
