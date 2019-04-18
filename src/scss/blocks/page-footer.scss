@@ -3,33 +3,81 @@
   background-color: $third-color;
 
   &__container {
-    margin: 0 auto;
-    width: 1024px;
+    padding: 0 20px;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      margin: 0 auto;
+      width: 760px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 auto;
+      width: 1024px;
+    }
   }
 
   &__row {
-    display: flex;
-    justify-content: space-between;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &__list {
-    display: flex;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
   }
 
   &__copuright,
   &__link {
+    margin-bottom: 10px;
     font-size: 13px;
     text-transform: capitalize;
     color: lighten($fourth-color, 20%);
   }
 
+  &__copuright {
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+
+    @media (min-width: $screen-md) {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 0;
+    }
+
+    &--first {
+
+      @media (min-width: $screen-md) {
+        padding-left: 0;
+      }
+    }
+  }
+
   &__item {
-    padding: 0 15px;
-    border-right: 1px solid $fourth-color;
+    margin-bottom: 5px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      border-right: 1px solid $fourth-color;
+    }
 
     &:last-child {
-      padding: 0 0 0 15px;
-      border-right: 0;
+
+      @media (min-width: $screen-md) {
+        border-right: 0;
+      }
     }
   }
 }
