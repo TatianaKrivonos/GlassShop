@@ -24,8 +24,13 @@
     }
 
     &--label {
-      transform: scale(-1, 1);
-      margin-right: 5px;
+      display: none;
+
+      @media (min-width: $screen-md) {
+        display: inline-flex;
+        transform: scale(-1, 1);
+        margin-right: 5px;
+      }
     }
 
     &--basket {
@@ -34,10 +39,14 @@
   }
 
   &__counter {
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: $gray;
-    font-weight: 700;
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: $gray;
+      font-weight: 700;
+    }
   }
 }
