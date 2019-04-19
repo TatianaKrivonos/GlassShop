@@ -1,6 +1,7 @@
 .banner {
 
   &__item {
+    position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
     background-image: url('../img/promo.jpg');

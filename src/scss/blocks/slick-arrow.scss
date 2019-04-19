@@ -2,8 +2,8 @@
   position: absolute;
   top: 0;
   bottom: 40px;
-  margin-top: auto;
   z-index: 1;
+  margin-top: auto;
   padding: 0;
   border: 0;
   width: 45px;
@@ -22,7 +22,8 @@
   }
 
   @media (min-width: $screen-lg) {
-    margin-bottom: auto;
+    bottom: 0;
+    margin: auto;
   }
 }
 
