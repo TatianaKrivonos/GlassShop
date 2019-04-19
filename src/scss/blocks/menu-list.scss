@@ -1,8 +1,14 @@
 .menu-list {
-  margin-left: auto;
+  margin-left: -15px;
+  overflow-x: auto;
 
-  &__item {
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
+  @media (min-width: $screen-lg) {
+    margin-left: auto;
+    margin-bottom: 0;
   }
 
   &__link {
@@ -11,6 +17,7 @@
     color: #fff;
     padding: 0 15px;
     border-right: 1px solid #fff;
+    white-space: nowrap;
 
     &--last {
       padding: 0 0 0 15px;

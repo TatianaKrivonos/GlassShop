@@ -14,9 +14,33 @@
   &__language,
   &__currency {
     font-family: $font-family;
+    margin-bottom: 20px;
+
+    @media (min-width: 717px) {
+      margin-bottom: 0;
+    }
 
     span {
       opacity: 0.8;
+    }
+  }
+
+  &__language {
+    margin-right: 20px;
+  }
+
+  &__currency {
+
+    @media (min-width: 667px) {
+      margin-right: 50px;
+    }
+  }
+
+  &__list {
+
+    @media (min-width: $screen-md) {
+      flex-grow: 1;
+      justify-content: flex-end;
     }
   }
 
@@ -64,9 +88,5 @@
       pointer-events: none;
       z-index: 1;
     }
-  }
-
-  &__language {
-    margin-right: 20px;
   }
 }
