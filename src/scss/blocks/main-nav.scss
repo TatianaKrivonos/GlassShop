@@ -2,13 +2,35 @@
   display: flex;
   align-items: center;
   flex-grow: 1;
+  order: 1;
+
+  @media (min-width: $screen-md) {
+    order: 0;
+  }
 
   &__list {
-    display: flex;
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
+
+    &--open {
+      position: absolute;
+      display: block;
+      margin-top: 38px;
+      margin-left: 40px;
+      z-index: 1;
+    }
   }
 
   &__item {
-    margin-right: 22px;
+    margin-bottom: 5px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      margin-right: 22px;
+    }
 
     &:last-child {
       margin-right: 0;

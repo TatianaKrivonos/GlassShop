@@ -3,11 +3,29 @@
 
   &__logo {
     display: inline-block;
-    margin-right: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      margin-right: 20px;
+      margin-bottom: 0;
+      width: auto;
+      text-align: left;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-right: 50px;
+    }
   }
 
   &__icons {
     display: flex;
+    order: 2;
+
+    @media (min-width: $screen-md) {
+      order: 0;
+    }
   }
 
   &__icon {
@@ -26,7 +44,7 @@
     &--label {
       display: none;
 
-      @media (min-width: $screen-md) {
+      @media (min-width: $screen-lg) {
         display: inline-flex;
         transform: scale(-1, 1);
         margin-right: 5px;
@@ -34,14 +52,17 @@
     }
 
     &--basket {
-      margin-right: 13px;
+
+      @media (min-width: $screen-lg) {
+        margin-right: 13px;
+      }
     }
   }
 
   &__counter {
     display: none;
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
       display: flex;
       align-items: center;
       text-transform: uppercase;

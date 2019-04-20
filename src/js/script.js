@@ -1,18 +1,32 @@
 import dataProducts from '../js/dataProducts.js';
 
+// кнопка меню
+let toggle = document.querySelector('#toggle');
+let menu = document.querySelector('#menuList');
+
+  toggle.addEventListener('click', menuVisible);
+  function menuVisible(e) {
+    e.preventDefault();
+    menu.classList.toggle('main-nav__list--open');
+  };
+
 $(document).ready(function(){
+
+  // слайдер
   $('.j-slider').slick();
   $('.aside-content__slider').slick({
     dots: true,
     arrows: false
   });
 
+  // счетчик
   $('.product-card__btn').on('click', function(e){
     e.preventDefault();
     $('.bottom-menu__counter span').html(+$('.bottom-menu__counter span').html()+1);
   });
 })
 
+// создание карточек
 const cardsFeatured = document.querySelector('.products__row--featured');
 const cardsStaff = document.querySelector('.products__row--staff');
 const cardsNew = document.querySelector('.products__row--new');
