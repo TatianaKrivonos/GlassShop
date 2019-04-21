@@ -54,7 +54,7 @@ function createCards(data) {
                                   <img src="img/glass/${product.img}" alt="" class="product-card__img" width="228" height="228">
                                   <div class="product-card__row">
                                     <div class="product-card__info">
-                                      <h3 class="product-card__title">${product.name}</h3>
+                                      <a href="#"><h3 class="product-card__title">${product.name}</h3></a>
                                       <p class="product-card__price"><span>${product.lastPrice} </span>$${product.price}</p>
                                     </div>
                                     <button class="product-card__btn">
