@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js  page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>GlassesShop</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody()</script>
+</head>
+<body>
+  <!-- <img src="./img/template.jpg" alt="" style="opacity: 0.3; position: absolute; z-index: 1;"> -->
+  <header class="page-header">
+    <div class="page-header__top top-menu">
+      <div class="page-header__container">
+        <div class="top-menu__language">
+          <span>Language:</span>
+          <form action="/" name="languge-form" method="post" class="top-menu__form top-menu__form--languge">
+            <div class="top-menu__select-wrap">
+              <select name="language-select">
+                <option value="English">English</option>
+                <option value="Russian">Russian</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="top-menu__currency">
+          <span>Currency:</span>
+          <form action="/" name="currency-form" method="post" class="top-menu__form top-menu__form--currency">
+            <div class="top-menu__select-wrap">
+              <select name="currency-select">
+                <option value="usd">usd</option>
+                <option value="rub">rub</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <ul class="top-menu__list menu-list">
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Account</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Wishlist</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Checkout</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Log in</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link menu-list__link--last">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-header__bottom bottom-menu">
+      <div class="page-header__container">
+        <a href="#" class="bottom-menu__logo logo">
+          <svg width="166" height="26">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="bottom-menu__main-nav main-nav">
+          <ul class="main-nav__list" id="menuList">
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Women</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Men</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Other</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Purchase</a>
+            </li>
+          </ul>
+          <button class="main-nav__icon toggle" id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+        <form method="get" class="search-form" name="search-form">
+          <input name="search-input" placeholder="Search..." type="text">
+          <button type="submit">
+            <svg width="12" height="12">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="bottom-menu__icons">
+          <a href="#" class="bottom-menu__icon bottom-menu__icon--label">
+            <svg width="20" height="17">
+              <use xlink:href="img/sprite.svg#shop-labels"></use>
+            </svg>
+          </a>
+          <a href="#" class="bottom-menu__icon bottom-menu__icon--basket">
+            <svg width="20" height="17">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="bottom-menu__counter">cart (<span>0</span>)</div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="banner__row j-slider">
+        <div class="banner__item">
+          <div class="banner__container">
+            <p><span>aluminum club1</span></p>
+            <p><span>experience ray-ban</span></p>
+          </div>
+        </div>
+        <div class="banner__item">
+          <div class="banner__container">
+            <p><span>aluminum club2</span></p>
+            <p><span>experience ray-ban</span></p>
+          </div>
+        </div>
+        <div class="banner__item">
+          <div class="banner__container">
+            <p><span>aluminum club3</span></p>
+            <p><span>experience ray-ban</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content__container">
+        <h1 class="content__title">Leo shop products</h1>
+        <div class="content__products-wrap">
+          <section class="products">
+            <h2 class="products__title">featured products</h2>
+            <div class="products__row products__row--featured">
+              <!-- <div class="products__col">
+                <article class="product-card">
+                  <img src="img/glasses/glasses1.jpg" alt="" class="product-card__img" width="217" height="228">
+                  <div class="product-card__row">
+                    <div class="product-card__info">
+                      <h3 class="product-card__title">Lorem Ipsum is simply</h3>
+                      <p class="product-card__price">$388.00</p>
+                    </div>
+                    <button class="product-card__btn">
+                      <svg width="24" height="24">
+                        <use xlink:href="img/sprite.svg#supermarket-basket"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </div> -->
+            </div>
+          </section>
+          <section class="products">
+            <h2 class="products__title">staff pick</h2>
+            <div class="products__row products__row--staff">
+
+            </div>
+          </section>
+          <section class="products">
+            <h2 class="products__title">new products</h2>
+            <div class="products__row products__row--new">
+
+            </div>
+          </section>
+        </div>
+        <section class="aside-content">
+          <div class="aside-content__slider">
+            <div class="aside-content__slider-item">
+              <h2>featured glass</h2>
+              <div class="aside-content__slider-img">
+                <button>Check it Out</button>
+              </div>
+            </div>
+            <div class="aside-content__slider-item">
+              <h2>featured glass</h2>
+              <div class="aside-content__slider-img">
+                <button>Check it Out</button>
+              </div>
+            </div>
+            <div class="aside-content__slider-item">
+              <h2>featured glass</h2>
+              <div class="aside-content__slider-img">
+                <button>Check it Out</button>
+              </div>
+            </div>
+          </div>
+          <div class="aside-content__signup">
+            <h2>newsletters signup</h2>
+            <p>Lorem ipsum dolor sit amen, dolor imun ra adlip</p>
+            <input type="text">
+            <button>subscribe</button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="features">
+      <div class="features__container">
+        <div class="features__row">
+          <div class="features__col">
+            <div class="features__item">
+              <div class="features__item-img features__item-img--truck">
+                <svg width="34" height="35">
+                  <use xlink:href="img/sprite.svg#truck"></use>
+                </svg>
+              </div>
+              <p class="features__item-text">free shipping on orders over $100</p>
+            </div>
+          </div>
+          <div class="features__col">
+            <div class="features__item">
+              <div class="features__item-img">
+                <svg width="28" height="28">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <p class="features__item-text">call us! toll free-409-8888-0099</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info-block">
+      <div class="info-block__container">
+        <div class="info-block__row">
+          <div class="info-block__col">
+            <div class="info-block__item info-block__item--facebook">
+              <h2 class="info-block__item-title">facebook</h2>
+              <p>20000 Members</p>
+              <button></button>
+              <div class="info-block__facebook-wrap">
+                <a href="#">
+                  <img src="img/member1.jpg" alt="Memeber" width="50" height="50">
+                </a>
+                <a href="#">
+                  <img src="img/member2.jpg" alt="Member" width="50" height="50">
+                </a>
+                <a href="#">
+                  <img src="img/member3.jpg" alt="Member" width="50" height="50">
+                </a>
+                <a href="#">
+                  <img src="img/member4.jpg" alt="Member" width="50" height="50">
+                </a>
+                <a href="#">
+                  <img src="img/member1.jpg" alt="Memeber" width="50" height="50">
+                </a>
+                <a href="#">
+                  <img src="img/member2.jpg" alt="Memeber" width="50" height="50">
+                </a>
+                <a href="#">
+                  <img src="img/member3.jpg" alt="Memeber" width="50" height="50">
+                </a>
+                <a href="#">
+                  <img src="img/member4.jpg" alt="Memeber" width="50" height="50">
+                </a>
+              </div>
+              <p>facebook Social plugin</p>
+            </div>
+          </div>
+          <div class="info-block__col">
+            <div class="info-block__item info-block__item--twitter">
+              <h2 class="info-block__item-title">from twitter</h2>
+              <div class="info-block__twitter-wrap">
+                <a href="#">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#fa-twitter"></use>
+                  </svg>
+                </a>
+                <p>Lorem Ipsum is simply dummy text of the printing and <span>typesetting industry</span>. <span>Lorem Ipsum</span> has been the industry's standard </p>
+              </div>
+              <div class="info-block__twitter-wrap">
+                <a href="#">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#fa-twitter"></use>
+                  </svg>
+                </a>
+                <p>Lorem Ipsum is simply dummy text of the printing and <span>typesetting industry</span>. <span>Lorem Ipsum</span> has been the industry's standard </p>
+              </div>
+            </div>
+          </div>
+          <div class="info-block__col">
+            <div class="info-block__item info-block__item--information">
+              <h2 class="info-block__item-title">information</h2>
+              <ul class="info-block__info-list">
+                <li>
+                  <a href="#">Sed utrides purus non.</a>
+                </li>
+                <li>
+                  <a href="#">Sodales sodales</a>
+                </li>
+                <li>
+                  <a href="#">Curabtur pretium dul vitae.</a>
+                </li>
+                <li>
+                  <a href="#">Dones gravida mi in nisi.</a>
+                </li>
+                <li>
+                  <a href="#">Faucibus leo condimentum</a>
+                </li>
+                <li>
+                  <a href="#">Doner etlorem suscipid.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="info-block__col">
+            <div class="info-block__item info-block__item--contuct">
+              <h2 class="info-block__item-title">contuct us</h2>
+              <ul class="info-block__contuct-list">
+                <li>Leo</li>
+                <li>Leopard media</li>
+                <li>KVM Rpad. 459DGH</li>
+                <li>+1 489-8888-0099</li>
+                <li>mail@email.com</li>
+              </ul>
+              <ul class="info-block__social-list">
+                <li>
+                  <a href="#">
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#googlePlusLogo"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="14" height="14">
+                      <use xlink:href="img/sprite.svg#fa-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="15" height="15">
+                      <use xlink:href="img/sprite.svg#rss-symbol"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="9" height="16">
+                      <use xlink:href="img/sprite.svg#facebook-logo"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__row">
+        <div class="page-footer__copuright">© Copyright 2013 Css Author, All Rights Reserved.</div>
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a href="#" class="page-footer__link page-footer__link--first">about us</a>
+          </li>
+          <li class="page-footer__item">
+            <a href="#" class="page-footer__link">delivery and returns</a>
+          </li>
+          <li class="page-footer__item">
+            <a href="#" class="page-footer__link">terms and conditions</a>
+          </li>
+          <li class="page-footer__item">
+            <a href="#" class="page-footer__link">contuct us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/vendors.min.js"></script>
+  <script src ="js/script.min.js"></script>
+</body>
+</html>
